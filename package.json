@@ -2,7 +2,7 @@
   "name": "string-validator",
   "description": "Converts node-validator validators to work with node-schema",
   "author": "Adam Nalisnick <theadam4257@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "index.js",
   "repository": {
