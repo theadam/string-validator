@@ -36,8 +36,8 @@ _.filter(strings, filterFunction); //=> ['this', 'nice', 'way', 'filter']
 - **contains(seed)** - check if the string contains the seed.
 - **matches(pattern [, modifiers])** - check if string matches the pattern. Either `matches('foo', /foo/i)` or `matches('foo', 'foo', 'i')`.
 - **isEmail()** - check if the string is an email.
-- **isURL(str [, options])** - check if the string is an URL. `options` is an object which defaults to `{ protocols: ['http','https','ftp'], require_tld: true, require_protocol: false, allow_underscores: false }`.
-- **isIP(str [, version])** - check if the string is an IP (version 4 or 6).
+- **isURL([options])** - check if the string is an URL. `options` is an object which defaults to `{ protocols: ['http','https','ftp'], require_tld: true, require_protocol: false, allow_underscores: false }`.
+- **isIP([version])** - check if the string is an IP (version 4 or 6).
 - **isAlpha()** - check if the string contains only letters (a-zA-Z).
 - **isNumeric()** - check if the string contains only numbers.
 - **isAlphanumeric()** - check if the string contains only letters and numbers.
@@ -52,13 +52,13 @@ _.filter(strings, filterFunction); //=> ['this', 'nice', 'way', 'filter']
 - **isNull()** - check if the string is null.
 - **isLength(min [, max])** - check if the string's length falls in a range. Note: this function takes into account surrogate pairs.
 - **isByteLength(min [, max])** - check if the string's length (in bytes) falls in a range.
-- **isUUID(str [, version])** - check if the string is a UUID (version 3, 4 or 5).
+- **isUUID([version])** - check if the string is a UUID (version 3, 4 or 5).
 - **isDate()** - check if the string is a date.
-- **isAfter(str [, date])** - check if the string is a date that's after the specified date (defaults to now).
-- **isBefore(str [, date])** - check if the string is a date that's before the specified date.
+- **isAfter([date])** - check if the string is a date that's after the specified date (defaults to now).
+- **isBefore([date])** - check if the string is a date that's before the specified date.
 - **isIn(values)** - check if the string is in a array of allowed values.
 - **isCreditCard()** - check if the string is a credit card.
-- **isISBN(str [, version])** - check if the string is an ISBN (version 10 or 13).
+- **isISBN([version])** - check if the string is an ISBN (version 10 or 13).
 - **isJSON()** - check if the string is valid JSON (note: uses JSON.parse).
 - **isMultibyte()** - check if the string contains one or more multibyte chars.
 - **isAscii()** - check if the string contains ASCII chars only.
