@@ -1,11 +1,11 @@
 #String Validator
-A library of string validators based on validator.js.  Created to be used with [node-schema](https://github.com/theadam/node-schema).
+A library of string validators based on [validator.js](https://github.com/chriso/validator.js).  Created to be used with [node-schema](https://github.com/theadam/node-schema).
 
 ###Installation
 `npm install string-validator`
 
 ###Description
-This library reformats each function from validator.js to create easily reusable validators.
+This library reformats each function from [validator.js](https://github.com/chriso/validator.js) to create easily reusable validators.
 ```javascript
   var str = require('string-validator')
 
@@ -14,7 +14,7 @@ This library reformats each function from validator.js to create easily reusable
 ```
 The result of each string-validator function is a function that accepts the value to test and
 returns true or false.  This allows the resulting function to be used in places where a
-function that just takes a value is expected.  This cannot be done with validator.js due to the extra
+function that just takes a value is expected.  This cannot be done with [validator.js](https://github.com/chriso/validator.js) due to the extra
 arguments in some functions.
 
 Example Usage:
@@ -34,7 +34,7 @@ _.filter(strings, filterFunction); //=> ['this', 'nice', 'way', 'filter']
 
 - **equals(comparison)** - check if the string matches the comparison.
 - **contains(seed)** - check if the string contains the seed.
-- **matches(pattern [, modifiers])** - check if string matches the pattern. Either `matches('foo', /foo/i)` or `matches('foo', 'foo', 'i')`.
+- **matches(pattern [, modifiers])** - check if string matches the pattern. Either `matches(/foo/i)` or `matches(foo', 'i')`.
 - **isEmail()** - check if the string is an email.
 - **isURL([options])** - check if the string is an URL. `options` is an object which defaults to `{ protocols: ['http','https','ftp'], require_tld: true, require_protocol: false, allow_underscores: false }`.
 - **isIP([version])** - check if the string is an IP (version 4 or 6).
